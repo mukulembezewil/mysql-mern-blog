@@ -44,7 +44,7 @@ const Navbar = () => {
 					</Link>
 					<Link
 						className="link"
-						to="/cat=design"
+						to="/?cat=design"
 					>
 						DESIGN
 					</Link>
