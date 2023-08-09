@@ -51,19 +51,21 @@ const Write = () => {
 	};
 
 	return (
-		<div className="content">
-			<input
-				type="text"
-				placeholder="Title"
-				onChange={(e) => setTitle(e.target.value)}
-			/>
-			<div className="editorContainer">
-				<ReactQuill
-					className="editor"
-					theme="snow"
-					value={value}
-					onChange={setValue}
+		<div className="add">
+			<div className="content">
+				<input
+					type="text"
+					placeholder="Title"
+					onChange={(e) => setTitle(e.target.value)}
 				/>
+				<div className="editorContainer">
+					<ReactQuill
+						className="editor"
+						theme="snow"
+						value={value}
+						onChange={setValue}
+					/>
+				</div>
 			</div>
 			<div className="menu">
 				<div className="item">
