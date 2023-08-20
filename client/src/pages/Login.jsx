@@ -45,6 +45,7 @@ const Login = () => {
 					required
 					type="password"
 					placeholder="password"
+					name="password"
 					onChange={handleChange}
 				/>
 				<button onClick={handleSubmit}>Login</button>

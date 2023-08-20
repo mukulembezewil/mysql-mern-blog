@@ -20,8 +20,8 @@ const Register = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			await axios.post('auth/register', inputs);
-			navigate('login');
+			await axios.post('/auth/register', inputs);
+			navigate('/login');
 		} catch (err) {
 			setError(err.response.data);
 		}
@@ -50,7 +50,7 @@ const Register = () => {
 					type="password"
 					placeholder="password"
 					name="password"
-					onChange={handleSubmit}
+					onChange={handleChange}
 				/>
 				<button onClick={handleSubmit}>Register</button>
 				{err && <p>{err}</p>}

@@ -9,8 +9,12 @@ const app = express();
 
 app.use(express.json());
 app.use(cookieParser());
+// Multer config
 const storage = multer.diskStorage({
 	destination: function (req, file, cb) {
+		cb(null, '../client/public/upload');
+	},
+	filename: function (req, file, cb) {
 		cb(null, Date.now() + file.originalname);
 	},
 });
@@ -23,8 +27,8 @@ app.post('/api/upload', upload.single('file'), function (req, res) {
 });
 
 app.use('/api/auth', authRoutes);
-app.use('api/users', userRoutes);
-app.use('api/posts', postRoutes);
+app.use('/api/users', userRoutes);
+app.use('/api/posts', postRoutes);
 
 app.listen(8000, () => {
 	console.log(

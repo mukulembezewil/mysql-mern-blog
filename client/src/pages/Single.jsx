@@ -8,9 +8,9 @@ const Single = () => {
 	return (
 		<div className="single">
 			<div className="content">
-				<img src="https://ie.auroville.org/content/images/2020/08/MentalFaculties.png"></img>
+				<img src="https://ie.auroville.org/content/images/2020/08/MentalFaculties.png" alt='' />
 				<div className="user">
-					<img src="https://ie.auroville.org/content/images/2020/08/MentalFaculties.png"></img>
+					<img src="https://ie.auroville.org/content/images/2020/08/MentalFaculties.png" alt='' />
 					<div className="info">
 						<span>John</span>
 						<p>Posted 6 days ago</p>

@@ -42,11 +42,11 @@ const Write = () => {
 						desc: value,
 						cat,
 						img: file ? imgUrl : '',
-						date: moment(Date.now()).format('YYY-MM-MM HH:mm:ss'),
+						date: moment(Date.now()).format('YYYY-MM-MM HH:mm:ss'),
 				  });
 			navigate('/');
 		} catch (err) {
-			console.log(err);
+			console.log(err.message);
 		}
 	};
 

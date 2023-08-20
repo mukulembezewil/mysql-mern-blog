@@ -24,12 +24,12 @@ const Navbar = () => {
 					>
 						<h6>ART</h6>
 					</Link>
-					<lINK
+					<Link
 						className="link"
 						to="/?cat=science"
 					>
 						<h6>SCIENCE</h6>
-					</lINK>
+					</Link>
 					<Link
 						className="link"
 						to="/?cat=technology"
@@ -54,6 +54,7 @@ const Navbar = () => {
 					>
 						<h6>FOOD</h6>
 					</Link>
+
 					<span>{currentUser?.username}</span>
 					{currentUser ? (
 						<span onClick={logout}>Logout</span>
@@ -65,6 +66,7 @@ const Navbar = () => {
 							Login
 						</Link>
 					)}
+
 					<span className="write">
 						<Link
 							className="link"
